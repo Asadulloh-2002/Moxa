@@ -34,6 +34,7 @@ body {
   src: local(""), url("../fonts/bai-jamjuree-v11-latin-regular.woff2") format("woff2"), url("../fonts/bai-jamjuree-v11-latin-regular.woff") format("woff");
 }
 .site-header__btn {
+  transition: 0.5s ease;
   padding: 0.9rem 2.6rem;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -48,6 +49,8 @@ body {
 }
 
 .site-header__btn:hover {
+  border: 1px solid #e94d35;
+  color: #e94d35;
   opacity: 0.8;
 }
 
@@ -57,6 +60,32 @@ body {
 
 .intro__btn-wrapper {
   display: flex;
+}
+@media only screen and (max-width: 485px) {
+  .intro__btn-wrapper {
+    flex-direction: column;
+  }
+}
+
+.intro__btn {
+  background-image: linear-gradient(to right, #e94d35 0%, #F45C43 51%, #e94d35 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px none;
+  border-radius: 10px;
+  display: block;
+}
+
+.intro__btn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
 .intro__btn:first-child {
@@ -68,9 +97,16 @@ body {
   text-decoration: none;
   border: 1px #161513 solid;
   cursor: pointer;
+  border-radius: 5px;
+  margin: 0;
+  margin-right: 10;
+  border: none;
 }
 @media only screen and (max-width: 485px) {
   .intro__btn:first-child {
+    border: none;
+    border-radius: 80% 80% 0px 0px;
+    margin: 0;
     font-size: 1.2rem;
   }
 }
@@ -82,9 +118,15 @@ body {
   text-decoration: none;
   border: 1px #161513 solid;
   cursor: pointer;
+  border-radius: 5px;
+  margin: 0 0 0 2rem;
+  border: none;
 }
 @media only screen and (max-width: 485px) {
   .intro__btn:last-child {
+    border: none;
+    border-radius: 0 0 80% 80%;
+    margin: 0;
     font-size: 1.2rem;
   }
 }
@@ -274,6 +316,11 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   border-bottom: 1px solid #131416;
+  color: #161513;
+}
+.sitenav__link:hover {
+  color: #e94d35;
+  border-bottom: 1px solid #e94d35;
 }
 .sitenav__link:not(:last-child) {
   margin-right: 3.2rem;
@@ -281,7 +328,7 @@ body {
 .sitenav__link-active {
   color: #e94d35;
   font-weight: bold;
-  border-bottom: 2px solid #e94d35;
+  border-bottom: 1px solid #e94d35;
 }
 @media only screen and (max-width: 576px) {
   .sitenav {

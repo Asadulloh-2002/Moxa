@@ -12,6 +12,11 @@
         font-size: 1.6rem;
         line-height: 1.5;
         border-bottom: 1px solid #131416;
+        color: $text-color;
+    }
+    &__link:hover {
+        color: $brand-color;
+        border-bottom: 1px solid $brand-color;
     }
     &__link:not(:last-child) {
         margin-right: 3.2rem;
@@ -19,7 +24,7 @@
     &__link-active {
         color: $brand-color;
         font-weight: bold;
-        border-bottom: 2px solid $brand-color;
+        border-bottom: 1px solid $brand-color;
     }
     @include responsive(phone) {
         display: none;
