@@ -862,6 +862,11 @@ body {
   justify-content: space-between;
   padding: 0 5.3rem 1rem 3.4rem;
 }
+@media only screen and (max-width: 1044px) {
+  .articles__item {
+    flex-direction: column;
+  }
+}
 .articles__item:not(:last-child) {
   margin-bottom: 10rem;
 }
@@ -869,7 +874,13 @@ body {
   align-items: start;
 }
 .articles__title-wrapper span {
+  color: #e94d35;
   display: flex;
+}
+@media only screen and (max-width: 576px) {
+  .articles__title-wrapper span {
+    font-size: 1.2rem;
+  }
 }
 .articles__title {
   font-weight: 400;
@@ -879,12 +890,26 @@ body {
   color: #161513;
   width: 100%;
   max-width: 456px;
+  text-align: start;
+}
+@media only screen and (max-width: 576px) {
+  .articles__title {
+    max-width: 100%;
+    font-size: 2rem;
+  }
 }
 .articles__text {
+  text-align: start;
   width: 100%;
   max-width: 457px;
   font-size: 1.6rem;
   line-height: 1.5;
+}
+@media only screen and (max-width: 576px) {
+  .articles__text {
+    max-width: 100%;
+    font-size: 1.4rem;
+  }
 }
 .articles__btn {
   width: 100%;
@@ -902,4 +927,16 @@ body {
   position: absolute;
   bottom: 22rem;
   right: -12rem;
+}
+@media only screen and (max-width: 1044px) {
+  .articles__img {
+    bottom: 37rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .articles__img {
+    width: 180px;
+    height: 180px;
+    right: -90px;
+  }
 }/*# sourceMappingURL=main.css.map */
