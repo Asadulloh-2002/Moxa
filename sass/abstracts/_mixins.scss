@@ -52,8 +52,14 @@
     @if($breakpoints == phone) {
         @media only screen and (max-width: 576px) { @content }
     };
+    @if($breakpoints == audio-hidden) {
+        @media only screen and (max-width: 645px) { @content }
+    };
     @if($breakpoints == tables) {
         @media only screen and (max-width: 768px) { @content }
+    };
+    @if($breakpoints == audio) {
+        @media only screen and (max-width: 942px) { @content }
     };
     @if($breakpoints == big-tables) {
         @media only screen and (max-width: 1044px) { @content }

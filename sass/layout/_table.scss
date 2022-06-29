@@ -26,4 +26,16 @@
         background-color: $text-color;
         color: $white-color;
     }
+    &__item:nth-child(4) {
+        width: 200px;
+        display: none;
+        @include responsive(audio) {
+            margin: auto;
+            display: block;
+        }
+        @include responsive(audio-hidden) {
+            display: none;
+        }
+
+    }
 }
