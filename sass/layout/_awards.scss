@@ -13,6 +13,10 @@
     &__title {
         @include title-center;
         margin-bottom: .9rem;
+        display: inline-block;
+        &:hover {
+            font-weight: bold;
+        }
     }
     &__suptext {
         letter-spacing: 1.44px;

@@ -1,0 +1,60 @@
+.articles {
+    position: relative;
+    padding: 6rem 0 13rem;
+    &__intro  {
+        @include container(1100px);
+        text-align: center;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 3.4rem 0;
+        margin-bottom: 6rem;
+    }
+    &__item {
+        border: 2px solid #000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5.3rem 1rem 3.4rem;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 10rem;
+    }
+    &__title-wrapper {
+        align-items: start;
+        span {
+            display: flex;
+        }
+    }
+    &__title {
+        @include frame;
+        width: 100%;
+        max-width: 456px;
+    }
+    &__text {
+        width: 100%;
+        max-width: 457px;
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+    &__btn {
+        width: 100%;
+        display: block;
+        padding: 12px 0 14px;
+        border: none;
+        background-color: $text-color;
+        border: 1px solid $text-color;
+        color: $white-color;
+        font-size: 2rem;
+        line-height: 1.6;
+        font-weight: 400;
+    }
+    &__img {
+        position: absolute;
+        bottom: 22rem;
+        right: -12rem;
+    }
+
+}

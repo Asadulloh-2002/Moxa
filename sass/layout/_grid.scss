@@ -1,0 +1,45 @@
+.services {
+    @include container(1100px);
+    margin-bottom: 16rem;
+    text-align: center;
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 4rem;
+        list-style: none;
+    }
+    &__item {
+        border: 2px solid $text-color;
+        padding: 3.4rem 4.9rem 3rem 3.4rem;
+        text-align: start;
+    }
+    &__item-title {
+        @include site-title;
+        margin-bottom: 2.8rem;
+        display: inline-block;
+        &:hover {
+            font-weight: bold;
+        }
+    }
+}
+.happy {
+    @include container(1100px);
+    margin-bottom: 6rem;
+    text-align: center;
+    h2 {
+        margin-bottom: 6.2rem;
+    }
+    &__list {
+        display: grid;
+        list-style: none;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 3.2rem;
+    }
+    &__item {
+        border: 1px solid #131416;
+        padding: 4.1rem 8.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
