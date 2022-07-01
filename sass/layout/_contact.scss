@@ -2,16 +2,28 @@
     background-color: #E6E3DE;
     padding: 6rem 0;
     &__intro {
+        transition: .5s ease;
         @include container(1100px);
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include responsive(big-tables) {
+            display: flex;
+            flex-direction: column
+        }
     }
     &__title {
         @include frame;
+        @include responsive(big-tables) {
+            margin-bottom: 3.5rem;
+        }
     }
     &__form {
         display: flex;
+        @include responsive(big-tables) {
+            display: flex;
+            flex-direction: column
+        }
     }
     .input {
         @include frame;
@@ -24,6 +36,10 @@
         &::placeholder {
             @include frame;
         }
+        @include responsive(big-tables) {
+            margin-right: 0;
+            margin-bottom: 2.5rem;
+        }
     }
     &__btn {
         @include frame;
@@ -31,5 +47,9 @@
         background-color: #131416;
         color: $white-color;
         padding: 1.2rem 1.5rem;
+        @include responsive(big-tables) {
+            margin-right: auto;
+            margin-left: auto;
+        }
     }
 }
