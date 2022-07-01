@@ -1,0 +1,35 @@
+.contact {
+    background-color: #E6E3DE;
+    padding: 6rem 0;
+    &__intro {
+        @include container(1100px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title {
+        @include frame;
+    }
+    &__form {
+        display: flex;
+    }
+    .input {
+        @include frame;
+        display: flex;
+        align-items: center;
+        border: 2px solid $text-color;
+        width: 354px;
+        margin-right: 2.4rem;
+        padding: 1.7rem 2.2rem 1.2rem;
+        &::placeholder {
+            @include frame;
+        }
+    }
+    &__btn {
+        @include frame;
+        border: none;
+        background-color: #131416;
+        color: $white-color;
+        padding: 1.2rem 1.5rem;
+    }
+}

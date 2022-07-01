@@ -1,0 +1,48 @@
+.footer {
+    background-color: $text-color;
+    padding: 6.64rem 0 2.55rem;
+    &__intro {
+        @include container(1100px);
+    }
+    &__top {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 4.75rem;
+
+    }
+    &__link {
+        display: flex;
+    }
+    &__top-list {
+        display: flex;
+        align-items: center;
+    }
+    &__top-item:not(:last-child) {
+        margin-right: 4.6rem;
+    }
+    &__top-item-link {
+        text-decoration: none;
+        color: $white-color;
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__text {
+        color: #f2f1ef;
+        font-size: 1.4rem;
+        line-height: 1.7;
+        font-weight: 400;
+    }
+    &__social-list {
+        display: flex;
+        align-items: center;
+    }
+    &__social-item:not(:last-child) {
+        margin-right: 1.6rem;
+    }
+}
