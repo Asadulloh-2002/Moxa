@@ -1,6 +1,6 @@
 .articles {
     position: relative;
-    overflow-y: hidden;
+    overflow-x: hidden;
     padding: 6rem 0 13rem;
     &__intro  {
         @include container(1100px);
